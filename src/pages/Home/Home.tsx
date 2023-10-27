@@ -1,4 +1,10 @@
+import ProjectsGrid from '../../components/ProjectsGrid/ProjectGrid';
+
 const Home = () => {
-    return <div className="nav-bar">Home</div>;
+    return (
+        <div className="home">
+            <ProjectsGrid />
+        </div>
+    );
 };
 export default Home;

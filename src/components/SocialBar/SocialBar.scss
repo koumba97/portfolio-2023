@@ -1,8 +1,7 @@
 @import '../../variables.scss';
 
 .social-bar {
-    max-width: 800px;
-    margin: auto;
+    height: max-content;
     justify-content: space-between;
     padding: 10px 0;
 
@@ -17,6 +16,9 @@
             color: $grey-200;
             transition-duration: 0.5s;
             width: 100%;
+            i {
+                font-size: 20px;
+            }
             &:hover {
                 color: $grey-400;
             }

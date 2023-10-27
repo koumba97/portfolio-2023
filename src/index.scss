@@ -25,3 +25,12 @@ body {
     min-width: 320px;
     min-height: 100vh;
 }
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: calc(100% - 30px * 2);
+}
