@@ -12,10 +12,6 @@
     // -webkit-box-sizing: border-box;
     // border: solid 2px $brand-color;
 
-    .project-carousel,
-    .project-details {
-    }
-
     .project-details {
         padding: 20px;
         display: flex;
@@ -61,5 +57,14 @@
         position: absolute;
         right: 0;
         bottom: 0;
+    }
+
+    @media (min-width: 1px) and (max-width: $sm-breakpoint) {
+        flex-direction: column;
+        display: flex;
+        height: auto;
+        .project-details {
+            height: auto;
+        }
     }
 }

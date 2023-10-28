@@ -23,4 +23,25 @@
             background-color: $grey-200;
         }
     }
+
+    @media (min-width: 1px) and (max-width: $sm-breakpoint) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .active-slide {
+            height: 500px;
+        }
+        .slides-container {
+            height: 130px;
+        }
+
+        @media (min-width: 1px) and (max-width: $xs-breakpoint) {
+            .active-slide {
+                height: 300px;
+            }
+            .slides-container {
+                height: 80px;
+            }
+        }
+    }
 }
