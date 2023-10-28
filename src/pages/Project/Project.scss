@@ -22,13 +22,19 @@
         flex-direction: column;
         position: relative;
         gap: 12px;
-        background-color: $grey-50;
+        background-color: #fbfbfb;
         .title {
             font-size: 32px;
-            margin: 0;
+            margin: 10px 0;
         }
-        .description {
+        .p-details,
+        .li-details {
             font-size: 16px;
+            color: $grey-800;
+        }
+        #links-section {
+            display: flex;
+            flex-direction: column;
         }
         h3,
         p,
@@ -37,11 +43,19 @@
         }
         ul {
             padding: 0;
+            li {
+                list-style: none;
+            }
         }
     }
 
-    .menu-button {
+    #menu-button {
         position: absolute;
+    }
+    #link-button {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .nav-buttons-container {
         position: absolute;

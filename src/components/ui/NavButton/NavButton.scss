@@ -7,6 +7,7 @@
     color: white;
     display: flex;
     align-items: center;
+    transition: 0.3s background-color, 0.3s color, 0.3s --p-border;
 
     &.outlined {
         box-sizing: border-box;
@@ -15,7 +16,19 @@
         border: solid 2px $brand-color;
         background-color: white;
         color: $brand-color;
+
+        &:hover {
+            background-color: lighten($brand-color, 20%);
+            border-color: lighten($brand-color, 20%);
+            color: white;
+        }
     }
+    &:hover {
+        background-color: lighten($brand-color, 20%);
+        border-color: lighten($brand-color, 20%);
+        color: white;
+    }
+
     .menu-icon {
         display: grid;
         flex-wrap: wrap;
@@ -29,10 +42,24 @@
             background-color: white;
             justify-items: center;
             align-items: center;
+            transition: 0.3s height, 0.3s width;
         }
     }
     i {
         margin: auto;
         font-size: 20px;
+        transition: 0.3s font-size;
+    }
+
+    &:active {
+        i {
+            font-size: 16px;
+        }
+        .menu-icon {
+            .square {
+                height: 7px;
+                width: 7px;
+            }
+        }
     }
 }
