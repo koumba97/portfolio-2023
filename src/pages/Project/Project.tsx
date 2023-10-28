@@ -1,5 +1,4 @@
 import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel';
-import Button from '../../components/ui/Button/Button';
 import ButtonLink from '../../components/ui/ButtonLink/ButtonLink';
 import NavButton from '../../components/ui/NavButton/NavButton';
 import './Project.scss';

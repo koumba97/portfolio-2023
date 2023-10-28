@@ -1,9 +1,7 @@
 import './ProjectCard.scss';
 
-interface ProjectCardProp {
-    children: any;
-}
-const ProjectCard = ({ children }: ProjectCardProp) => {
+interface ProjectCardProp {}
+const ProjectCard = ({}: ProjectCardProp) => {
     const bgImage = 'https://www.echollywell.co.uk/wp-content/uploads/blank-00cc00_040004000.png';
     return (
         <div className="project-card">
