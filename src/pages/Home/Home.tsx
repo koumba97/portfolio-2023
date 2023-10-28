@@ -2,9 +2,9 @@ import ProjectsGrid from '../../components/ProjectsGrid/ProjectGrid';
 
 const Home = () => {
     return (
-        <div className="home">
+        <section className="home">
             <ProjectsGrid />
-        </div>
+        </section>
     );
 };
 export default Home;

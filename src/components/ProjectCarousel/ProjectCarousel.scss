@@ -1,0 +1,24 @@
+.project-carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    .active-slide {
+        border: solid;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .slides-container {
+        grid-row-start: 3;
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        display: flex;
+        .slide {
+            flex: 1;
+            height: 100%;
+            border: solid;
+        }
+    }
+}
