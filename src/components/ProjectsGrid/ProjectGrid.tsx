@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom';
 import './ProjectsGrid.scss';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import { ProjectsData } from '../../data/ProjectsData';
 
 const ProjectsGrid = () => {
-    const projects = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const projects = ProjectsData;
 
     return (
         <div className="projects-grid">
             {projects.map((project, i) => {
                 return (
-                    <Link to={`project/${i}`}>
-                        <ProjectCard>{project}</ProjectCard>
+                    <Link to={`project/${i}`} key={`project-${i}`}>
+                        <ProjectCard project={project}></ProjectCard>
                     </Link>
                 );
             })}
