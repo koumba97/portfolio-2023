@@ -1,10 +1,14 @@
 import './ProjectCard.scss';
 
-interface ProjectCardInterface {
+interface ProjectCardProp {
     children: any;
 }
-const ProjectCard = ({ children }: ProjectCardInterface) => {
-    return <div className="project-card">{children}</div>;
+const ProjectCard = ({ children }: ProjectCardProp) => {
+    return (
+        <div className="project-card">
+            <p>{children}</p>
+        </div>
+    );
 };
 
 export default ProjectCard;

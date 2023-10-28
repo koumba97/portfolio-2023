@@ -1,9 +1,11 @@
 import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel';
+import NavButton from '../../components/ui/NavButton/NavButton';
 import './Project.scss';
 
 const Project = () => {
     return (
         <section className="project">
+            <NavButton className="menu-button" />
             <ProjectCarousel />
             <div className="project-details">
                 <section>
@@ -37,6 +39,11 @@ const Project = () => {
                     <h3>Github</h3>
                     <a href="">github link</a>
                 </section>
+
+                <div className="nav-buttons-container">
+                    <NavButton outlined type="previous" />
+                    <NavButton type="next" />
+                </div>
             </div>
         </section>
     );

@@ -1,9 +1,11 @@
+@import '../../variables.scss';
+
 .project-carousel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     .active-slide {
-        border: solid;
+        background-color: $grey-100;
         grid-row-start: 1;
         grid-row-end: 4;
         grid-column-start: 1;
@@ -18,7 +20,7 @@
         .slide {
             flex: 1;
             height: 100%;
-            border: solid;
+            background-color: $grey-200;
         }
     }
 }

@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -6,6 +8,7 @@
 
     p {
         margin: 0;
+        color: $grey-200;
     }
     .brand-name {
         text-align: center;
