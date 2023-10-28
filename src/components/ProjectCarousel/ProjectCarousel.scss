@@ -3,24 +3,70 @@
 .project-carousel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     .active-slide {
         background-color: $grey-100;
         grid-row-start: 1;
-        grid-row-end: 4;
+        grid-row-end: 5;
         grid-column-start: 1;
         grid-column-end: 5;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+
+        .slide-control-btn {
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            padding: 0 14px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+                background-color: rgba(0, 0, 0, 0.127);
+            }
+            i {
+                font-size: 50px;
+                color: white;
+                opacity: 0.5;
+            }
+        }
     }
     .slides-container {
-        grid-row-start: 3;
         grid-row-start: 4;
+        grid-row-start: 5;
         grid-column-start: 1;
         grid-column-end: 5;
         display: flex;
-        .slide {
-            flex: 1;
+        .slide-wrapper {
+            width: 100%;
             height: 100%;
-            background-color: $grey-200;
+            background-color: rgba($brand-color, 0.4);
+            &.active {
+                .slide {
+                    opacity: 0.8;
+                    background-color: white;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    border: solid 2px $brand-color;
+                }
+            }
+            .slide {
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                opacity: 0.4;
+                background-size: cover;
+                background-position: center;
+                transition: opacity 0.2s;
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 
