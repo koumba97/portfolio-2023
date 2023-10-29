@@ -1,17 +1,34 @@
+import { useParams } from 'react-router-dom';
 import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel';
 import ButtonLink from '../../components/ui/ButtonLink/ButtonLink';
 import NavButton from '../../components/ui/NavButton/NavButton';
 import './Project.scss';
+import { useContext, useEffect, useState } from 'react';
+import { ProjectContext } from '../../contexts/ProjectContext';
+import { ProjectInterface } from '../../data/ProjectsData';
 
 const Project = () => {
+    const [project, setProject] = useState<ProjectInterface>({} as ProjectInterface);
+    const { getProjectById } = useContext(ProjectContext);
+    const { projectId } = useParams<{ projectId: string }>();
+
+    useEffect(() => {
+        if (projectId) {
+            const projectData = getProjectById(projectId);
+            if (projectData) {
+                setProject(projectData);
+            }
+        }
+    }, [projectId]);
+
     return (
         <section className="project">
             <NavButton id="menu-button" />
-            <ProjectCarousel />
+            <ProjectCarousel images={project.images} />
             <div className="project-details">
                 <section>
                     <NavButton id="link-button" type="link" outlined />
-                    <h1 className="title">Project title</h1>
+                    <h1 className="title">{project.title}</h1>
                     <p className="p-details">
                         Lorem ipsum dolor sit amet, consectetuer amet adipiscing elit. Aenean commodo ligula eget et
                         dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturien commodo.
