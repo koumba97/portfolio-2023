@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+.switch-lang {
+    cursor: pointer;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    width: 20px;
+    &:hover {
+        color: $brand-color;
+    }
+}
