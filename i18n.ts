@@ -8,13 +8,13 @@ const resources = {
     en: {
         translation: {
             'Welcome to React': 'Welcome to React and react-i18next',
-            'PORTFOLIO-2023': 'Portfolio 2023',
+            PORTFOLIO_2023: 'Portfolio 2023',
         },
     },
     fr: {
         translation: {
             'Welcome to React': 'Bienvenue à React et react-i18next',
-            'PORTFOLIO-2023': 'Portfolio 2023',
+            PORTFOLIO_2023: 'Portfolio 2023',
         },
     },
 };

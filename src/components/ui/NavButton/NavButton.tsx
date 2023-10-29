@@ -5,26 +5,12 @@ import { useEffect, useState } from 'react';
 type ButtonType = 'menu' | 'next' | 'previous' | 'link' | 'about';
 interface NavButtonProp {
     type?: ButtonType;
+    route?: string;
     outlined?: boolean;
     className?: string;
     id?: string;
 }
-const NavButton = ({ type = 'menu', outlined = false, className = '', id = '' }: NavButtonProp) => {
-    const [route, setRoute] = useState('/');
-    useEffect(() => {
-        setRoute(updateRoute());
-    }, [type]);
-
-    const updateRoute = () => {
-        switch (type) {
-            case 'menu':
-                return '/';
-
-            default:
-                return '';
-        }
-    };
-
+const NavButton = ({ type = 'menu', route = '/', outlined = false, className = '', id = '' }: NavButtonProp) => {
     return (
         <Link id={id} className={`nav-button ${className} ${outlined ? 'outlined' : null}`} to={route}>
             <ButtonContent type={type} />
