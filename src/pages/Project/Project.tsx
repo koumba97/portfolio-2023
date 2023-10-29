@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel';
 import ButtonLink from '../../components/ui/ButtonLink/ButtonLink';
 import NavButton from '../../components/ui/NavButton/NavButton';
@@ -13,6 +13,8 @@ const Project = () => {
     const [nextProject, setNextProject] = useState<string>();
     const { getProjectById } = useContext(ProjectContext);
     const { projectId } = useParams<{ projectId: string }>();
+
+    const location = useLocation();
 
     const LAST_PROJECT_ID = '9';
     const FIRST_PROJECT_ID = '1';
@@ -54,10 +56,8 @@ const Project = () => {
             <ProjectCarousel images={project.images} />
             <div className="project-details">
                 <section>
-                    <NavButton id="link-button" type="link" outlined />
-                    <h1 className="title">
-                        {project.title} {projectId}
-                    </h1>
+                    <NavButton id="link-button" type="link" outlined link={location.pathname} />
+                    <h1 className="title">{project.title}</h1>
                     <p className="p-details">
                         Lorem ipsum dolor sit amet, consectetuer amet adipiscing elit. Aenean commodo ligula eget et
                         dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturien commodo.

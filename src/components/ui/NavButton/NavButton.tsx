@@ -9,12 +9,46 @@ interface NavButtonProp {
     outlined?: boolean;
     className?: string;
     id?: string;
+    link?: string;
 }
-const NavButton = ({ type = 'menu', route = '/', outlined = false, className = '', id = '' }: NavButtonProp) => {
+const NavButton = ({
+    type = 'menu',
+    route = '/',
+    outlined = false,
+    className = '',
+    id = '',
+    link = '',
+}: NavButtonProp) => {
+    const copyLink = () => {
+        navigator.clipboard.writeText(link);
+    };
+    const handleButtonClick = () => {
+        switch (type) {
+            case 'link':
+                copyLink();
+                break;
+
+            default:
+                break;
+        }
+    };
+
     return (
-        <Link id={id} className={`nav-button ${className} ${outlined ? 'outlined' : null}`} to={route}>
-            <ButtonContent type={type} />
-        </Link>
+        <>
+            {type !== 'link' ? (
+                <Link id={id} className={`nav-button ${className} ${outlined ? 'outlined' : null}`} to={route}>
+                    <ButtonContent type={type} />
+                </Link>
+            ) : (
+                <button
+                    id={id}
+                    className={`nav-button ${className} ${outlined ? 'outlined' : null}`}
+                    onClick={handleButtonClick}
+                >
+                    <ButtonContent type={type} />
+                </button>
+            )}
+        </>
     );
 };
 
