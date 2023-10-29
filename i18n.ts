@@ -9,12 +9,14 @@ const resources = {
         translation: {
             'Welcome to React': 'Welcome to React and react-i18next',
             PORTFOLIO_2023: 'Portfolio 2023',
+            LINK_COPIED: 'Link copied to clipboard !',
         },
     },
     fr: {
         translation: {
             'Welcome to React': 'Bienvenue à React et react-i18next',
             PORTFOLIO_2023: 'Portfolio 2023',
+            LINK_COPIED: 'Lien copié dans le presse-papier !',
         },
     },
 };

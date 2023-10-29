@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import '../i18n.ts';
 import './index.scss';
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter } from 'react-router-dom';
 import { ProjectProvider } from './contexts/ProjectContext.tsx';
 
