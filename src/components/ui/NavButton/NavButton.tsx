@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './NavButton.scss';
-import { useEffect, useState } from 'react';
 
 type ButtonType = 'menu' | 'next' | 'previous' | 'link' | 'about';
 interface NavButtonProp {

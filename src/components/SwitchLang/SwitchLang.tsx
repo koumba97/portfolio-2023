@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import './SwitchLang.scss';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 type SupportedLang = 'en' | 'fr';
 const SwitchLang = () => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const [currentLang, setCurrentLang] = useState(i18n.language);
     const [switchTo, setSwitchTo] = useState<SupportedLang>(currentLang === 'fr' ? 'en' : 'fr');
 
