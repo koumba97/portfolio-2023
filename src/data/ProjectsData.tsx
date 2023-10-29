@@ -1,5 +1,5 @@
 export interface ProjectInterface {
-    id: number;
+    id: string;
     title: string;
     stack: Stack[];
     coverImage: string;
@@ -13,7 +13,7 @@ export interface Stack {
 }
 export const ProjectsData: ProjectInterface[] = [
     {
-        id: 1,
+        id: '1',
         title: 'Drawings',
         stack: [
             {
@@ -32,7 +32,7 @@ export const ProjectsData: ProjectInterface[] = [
     },
 
     {
-        id: 5,
+        id: '2',
         title: 'Biomimicry',
         stack: [
             {
@@ -45,7 +45,7 @@ export const ProjectsData: ProjectInterface[] = [
         images: [],
     },
     {
-        id: 2,
+        id: '3',
         title: 'hii.',
         stack: [
             {
@@ -59,7 +59,7 @@ export const ProjectsData: ProjectInterface[] = [
     },
 
     {
-        id: 6,
+        id: '4',
         title: 'Ospdom',
         stack: [
             {
@@ -72,7 +72,7 @@ export const ProjectsData: ProjectInterface[] = [
         images: [],
     },
     {
-        id: 3,
+        id: '5',
         title: 'Cookish',
         stack: [
             {
@@ -85,7 +85,7 @@ export const ProjectsData: ProjectInterface[] = [
         images: [],
     },
     {
-        id: 6,
+        id: '6',
         title: 'Music Library',
         stack: [
             {
@@ -99,7 +99,7 @@ export const ProjectsData: ProjectInterface[] = [
     },
 
     {
-        id: 9,
+        id: '7',
         title: 'Title',
         stack: [
             {
@@ -113,7 +113,7 @@ export const ProjectsData: ProjectInterface[] = [
     },
 
     {
-        id: 4,
+        id: '8',
         title: 'KRUSH.',
         stack: [
             {
@@ -127,7 +127,7 @@ export const ProjectsData: ProjectInterface[] = [
     },
 
     {
-        id: 8,
+        id: '9',
         title: 'My cinema',
         stack: [
             {

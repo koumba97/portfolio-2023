@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './NavButton.scss';
 import { useEffect, useState } from 'react';
 
-type ButtonType = 'menu' | 'next' | 'previous' | 'link';
+type ButtonType = 'menu' | 'next' | 'previous' | 'link' | 'about';
 interface NavButtonProp {
     type?: ButtonType;
     outlined?: boolean;
@@ -49,6 +49,9 @@ const ButtonContent = ({ type }: ButtonContentProp) => {
         case 'link':
             return <LinkButton />;
 
+        case 'about':
+            return <AboutButton />;
+
         default:
             return <MenuButton />;
     }
@@ -75,6 +78,10 @@ const PreviousButton = () => {
 
 const LinkButton = () => {
     return <i className="las la-link"></i>;
+};
+
+const AboutButton = () => {
+    return <i className="las la-user"></i>;
 };
 
 export default NavButton;

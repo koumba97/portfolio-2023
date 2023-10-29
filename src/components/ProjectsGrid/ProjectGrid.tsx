@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import './ProjectsGrid.scss';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import { ProjectsData } from '../../data/ProjectsData';
+import { useContext } from 'react';
+import { ProjectContext } from '../../contexts/ProjectContext';
 
 const ProjectsGrid = () => {
-    const projects = ProjectsData;
+    const { projects } = useContext(ProjectContext);
 
     return (
         <div className="projects-grid">
