@@ -5,34 +5,43 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     .active-slide {
+        position: relative;
         background-color: $grey-100;
         grid-row-start: 1;
         grid-row-end: 5;
         grid-column-start: 1;
         grid-column-end: 5;
         background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: space-between;
-
-        .slide-control-btn {
+        .control-container {
+            background-position: center;
+            display: flex;
+            justify-content: space-between;
             height: 100%;
-            background-color: transparent;
-            border: none;
-            padding: 0 14px;
-            opacity: 0.5;
-            transition: opacity 0.3s;
-            cursor: pointer;
 
-            &:hover {
-                opacity: 1;
-                background-color: rgba(0, 0, 0, 0.127);
-            }
-            i {
-                font-size: 50px;
-                color: white;
+            .slide-control-btn {
+                height: 100%;
+                background-color: transparent;
+                border: none;
+                padding: 0 14px;
                 opacity: 0.5;
+                transition: opacity 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                    background-color: rgba(0, 0, 0, 0.127);
+                }
+                i {
+                    font-size: 50px;
+                    color: white;
+                    opacity: 0.5;
+                }
             }
+        }
+        .demo-button {
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
     }
     .slides-container {
@@ -69,7 +78,6 @@
             }
         }
     }
-
     @media (min-width: 1px) and (max-width: $sm-breakpoint) {
         display: flex;
         flex-direction: column;
@@ -89,5 +97,22 @@
                 height: 80px;
             }
         }
+    }
+}
+
+.demo-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    video {
+        margin: auto;
+        width: 80vw;
     }
 }

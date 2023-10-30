@@ -51,7 +51,7 @@ const Project = () => {
     return (
         <section className="project">
             <NavButton id="menu-button" />
-            <ProjectCarousel images={project.images} />
+            <ProjectCarousel images={project.images} demo={project.demo ? project.demo : null} />
             <div className="project-details">
                 <section>
                     <NavButton id="link-button" type="link" outlined link={window.location.href} />
