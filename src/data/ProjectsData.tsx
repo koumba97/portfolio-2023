@@ -26,8 +26,16 @@ export const ProjectsData: ProjectInterface[] = [
         category: ['ILLUSTRATION'],
         stack: [
             {
-                name: '',
-                image: '',
+                name: 'Procreate',
+                image: '../images/logos/procreate.png',
+            },
+            {
+                name: 'Clip Studio Paint',
+                image: '../images/logos/clip_studio_paint.png',
+            },
+            {
+                name: 'Photoshop',
+                image: '../images/logos/photoshop.png',
             },
         ],
         coverImage:
@@ -48,8 +56,12 @@ export const ProjectsData: ProjectInterface[] = [
         category: ['GRAPHIC_DESIGN'],
         stack: [
             {
-                name: '',
-                image: '',
+                name: 'Photoshop',
+                image: '../images/logos/photoshop.png',
+            },
+            {
+                name: 'InDesign',
+                image: '../images/logos/indesign.png',
             },
         ],
         coverImage:
@@ -68,8 +80,16 @@ export const ProjectsData: ProjectInterface[] = [
         category: ['WEB_DEVELOPMENT', 'GRAPHIC_DESIGN'],
         stack: [
             {
-                name: '',
-                image: '',
+                name: 'React Js',
+                image: '../images/logos/react_js.png',
+            },
+            {
+                name: 'Node Js',
+                image: '../images/logos/node_js.png',
+            },
+            {
+                name: 'Symfony',
+                image: '../images/logos/symfony.png',
             },
         ],
         coverImage:
@@ -89,8 +109,20 @@ export const ProjectsData: ProjectInterface[] = [
         category: ['WEB_DEVELOPMENT', 'GRAPHIC_DESIGN'],
         stack: [
             {
-                name: '',
-                image: '',
+                name: 'Laravel',
+                image: '../images/logos/laravel.png',
+            },
+            {
+                name: 'Jquery',
+                image: '../images/logos/jquery.gif',
+            },
+            {
+                name: 'PhpMyAdmin',
+                image: '../images/logos/phpmyadmin.png',
+            },
+            {
+                name: 'Sass',
+                image: '../images/logos/sass.png',
             },
         ],
         coverImage:
@@ -110,8 +142,20 @@ export const ProjectsData: ProjectInterface[] = [
         category: ['MOBILE_DEVELOPMENT'],
         stack: [
             {
-                name: '',
-                image: '',
+                name: 'React Native',
+                image: '/images/logos/react_native.png',
+            },
+            {
+                name: 'Node JS',
+                image: '/images/logos/node_js.png',
+            },
+            {
+                name: 'Firebase',
+                image: '../images/logos/firebase.png',
+            },
+            {
+                name: 'Sass',
+                image: '../images/logos/sass.png',
             },
         ],
         coverImage:
@@ -149,8 +193,16 @@ export const ProjectsData: ProjectInterface[] = [
         category: ['GRAPHIC_DESIGN'],
         stack: [
             {
-                name: '',
-                image: '',
+                name: 'InDesign',
+                image: '/images/logos/indesign.png',
+            },
+            {
+                name: 'Illustrator',
+                image: '/images/logos/illustrator.png',
+            },
+            {
+                name: 'Photoshop',
+                image: '/images/logos/photoshop.png',
             },
         ],
         coverImage:
@@ -189,8 +241,20 @@ export const ProjectsData: ProjectInterface[] = [
         category: ['WEB_DEVELOPMENT'],
         stack: [
             {
-                name: '',
-                image: '',
+                name: 'PHP',
+                image: '../images/logos/php.png',
+            },
+            {
+                name: 'Javascript',
+                image: '../images/logos/js.png',
+            },
+            {
+                name: 'HTML',
+                image: '../images/logos/html.png',
+            },
+            {
+                name: 'CSS',
+                image: '../images/logos/css.png',
             },
         ],
         coverImage:

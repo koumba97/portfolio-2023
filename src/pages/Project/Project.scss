@@ -17,11 +17,11 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        gap: 12px;
+        gap: 8px;
         background-color: #fbfbfb;
         .title {
             font-size: 32px;
-            margin: 10px 0;
+            margin: 0;
         }
         .description,
         .li-details {
@@ -33,13 +33,24 @@
             flex-direction: column;
         }
         h3,
-        p,
-        ul {
+        p {
             margin: 0;
         }
-        ul {
+        .stack-list {
+            margin: 0;
             padding: 0;
             li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .stack-logo {
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
                 list-style: none;
             }
         }

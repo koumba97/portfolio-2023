@@ -63,10 +63,18 @@ const Project = () => {
 
                 <section>
                     <h3>{t('STACK')}</h3>
-                    <ul>
-                        <li className="li-details">stack 1</li>
-                        <li className="li-details">stack 1</li>
-                        <li className="li-details">stack 1</li>
+                    <ul className="stack-list">
+                        {project.stack
+                            ? project.stack.map((stack) => (
+                                  <li>
+                                      <div
+                                          className="stack-logo"
+                                          style={{ backgroundImage: `url(${stack.image})` }}
+                                      ></div>
+                                      {t(stack.name)}
+                                  </li>
+                              ))
+                            : null}
                     </ul>
                 </section>
 
