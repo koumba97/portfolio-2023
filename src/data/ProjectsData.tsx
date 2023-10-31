@@ -1,20 +1,29 @@
 export interface ProjectInterface {
     id: string;
     title: string;
+    category: Category[];
+    description: string;
     stack: Stack[];
     coverImage: string;
     images: string[];
     demo?: string;
+    project_link?: string;
+    github_link?: string;
 }
 
 export interface Stack {
     name: string;
     image: string;
 }
+
+export type Category = 'WEB_DEVELOPMENT' | 'MOBILE_DEVELOPMENT' | 'GRAPHIC_DESIGN' | 'ILLUSTRATION';
+
 export const ProjectsData: ProjectInterface[] = [
     {
         id: '1',
         title: 'Drawings',
+        description: 'PROJECT_DESCRIPTION_DRAWING',
+        category: ['ILLUSTRATION'],
         stack: [
             {
                 name: '',
@@ -29,11 +38,14 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/illustration%2Fblack-swan.JPG?alt=media&token=a8808513-e24a-4878-bce6-afb0b46a3af3&_gl=1*9gxzp1*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODUxODQwMS4zOS4xLjE2OTg1MTg3OTQuMzAuMC4w',
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/illustration%2Fcry-baby.gif?alt=media&token=0f34c26d-5934-48b0-9b63-ad04f7d51688&_gl=1*9hdw2r*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODUxODQwMS4zOS4xLjE2OTg1MTg3ODIuNDIuMC4w',
         ],
+        project_link: 'https://www.instagram.com/koum.97/',
     },
 
     {
         id: '2',
         title: 'Biomimicry',
+        description: 'PROJECT_DESCRIPTION_BIOMIMICRY',
+        category: ['GRAPHIC_DESIGN'],
         stack: [
             {
                 name: '',
@@ -52,6 +64,8 @@ export const ProjectsData: ProjectInterface[] = [
     {
         id: '3',
         title: 'hii.',
+        description: 'PROJECT_DESCRIPTION_HII',
+        category: ['WEB_DEVELOPMENT', 'GRAPHIC_DESIGN'],
         stack: [
             {
                 name: '',
@@ -71,6 +85,8 @@ export const ProjectsData: ProjectInterface[] = [
     {
         id: '4',
         title: 'Ospdom',
+        description: 'PROJECT_DESCRIPTION_OSPDOM',
+        category: ['WEB_DEVELOPMENT', 'GRAPHIC_DESIGN'],
         stack: [
             {
                 name: '',
@@ -85,10 +101,13 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/opsdom%2Fospdom22.jpg?alt=media&token=8bde4fda-9c5f-41e7-8ae6-0033b95d58c6&_gl=1*1bclfx2*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1ODk3NjkuMTUuMC4w',
         ],
         demo: 'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/opsdom%2Fospdom.mp4?alt=media&token=5093630b-c690-4cce-bd5e-e0e111c2b006&_gl=1*mjynij*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODY4OTU2MC40My4xLjE2OTg2ODk2NDYuNTIuMC4w',
+        project_link: 'https://www.ospdom.fr/',
     },
     {
         id: '5',
         title: 'Cookish',
+        description: 'PROJECT_DESCRIPTION_COOKISH',
+        category: ['MOBILE_DEVELOPMENT'],
         stack: [
             {
                 name: '',
@@ -107,6 +126,8 @@ export const ProjectsData: ProjectInterface[] = [
     {
         id: '6',
         title: 'Music Library',
+        description: 'PROJECT_DESCRIPTION_MUSIC_LIBRARY',
+        category: ['WEB_DEVELOPMENT'],
         stack: [
             {
                 name: '',
@@ -117,11 +138,15 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/music-library%2Fmusic-library-banner.png?alt=media&token=7fdf10b8-5f4d-4061-95bb-5b096d7e6e76&_gl=1*nzghm6*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODUyMTM0MC40MC4xLjE2OTg1MjM5MjYuNDYuMC4w',
         images: [],
         demo: '',
+        project_link: 'https://music-library-koum.vercel.app/',
+        github_link: 'https://github.com/koumba97/music-library',
     },
 
     {
         id: '7',
         title: 'Typo',
+        description: 'PROJECT_DESCRIPTION_TYPO',
+        category: ['GRAPHIC_DESIGN'],
         stack: [
             {
                 name: '',
@@ -141,6 +166,8 @@ export const ProjectsData: ProjectInterface[] = [
     {
         id: '8',
         title: 'KRUSH.',
+        description: 'PROJECT_DESCRIPTION_KRUSH',
+        category: ['WEB_DEVELOPMENT'],
         stack: [
             {
                 name: '',
@@ -151,11 +178,15 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/krush%2Fkrush-banner.png?alt=media&token=25a76fb6-c986-4825-953a-527def062a44&_gl=1*1f9j32x*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODUyMTM0MC40MC4xLjE2OTg1MjU1NDAuNTguMC4w',
         images: [],
         demo: '',
+        project_link: 'https://krush-koum.vercel.app/',
+        github_link: 'https://github.com/koumba97/krush-ecommerce',
     },
 
     {
         id: '9',
         title: 'My cinema',
+        description: 'PROJECT_DESCRIPTION_MY_CINEMA',
+        category: ['WEB_DEVELOPMENT'],
         stack: [
             {
                 name: '',

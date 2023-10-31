@@ -6,6 +6,7 @@ import './Project.scss';
 import { useContext, useEffect, useState } from 'react';
 import { ProjectContext } from '../../contexts/ProjectContext';
 import { ProjectInterface } from '../../data/ProjectsData';
+import { useTranslation } from 'react-i18next';
 
 const Project = () => {
     const [project, setProject] = useState<ProjectInterface>({} as ProjectInterface);
@@ -13,6 +14,7 @@ const Project = () => {
     const [nextProject, setNextProject] = useState<string>();
     const { getProjectById } = useContext(ProjectContext);
     const { projectId } = useParams<{ projectId: string }>();
+    const { t } = useTranslation();
 
     const LAST_PROJECT_ID = '9';
     const FIRST_PROJECT_ID = '1';
@@ -56,14 +58,11 @@ const Project = () => {
                 <section>
                     <NavButton id="link-button" type="link" outlined link={window.location.href} />
                     <h1 className="title">{project.title}</h1>
-                    <p className="p-details">
-                        Lorem ipsum dolor sit amet, consectetuer amet adipiscing elit. Aenean commodo ligula eget et
-                        dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturien commodo.
-                    </p>
+                    <div className="description" dangerouslySetInnerHTML={{ __html: t(project.description) }} />
                 </section>
 
                 <section>
-                    <h3>Stack</h3>
+                    <h3>{t('STACK')}</h3>
                     <ul>
                         <li className="li-details">stack 1</li>
                         <li className="li-details">stack 1</li>
@@ -72,17 +71,25 @@ const Project = () => {
                 </section>
 
                 <section>
-                    <h3>Category</h3>
-                    <p className="p-details">Web developement</p>
+                    <h3>{t('CATEGORY')}</h3>
+                    <p className="p-details">
+                        {project.category
+                            ? project.category.map((category, index) => (index > 0 ? `, ${t(category)}` : t(category)))
+                            : null}
+                    </p>
                 </section>
 
                 <section id="links-section">
-                    <ButtonLink icon="las la-desktop" href="">
-                        Preview project
-                    </ButtonLink>
-                    <ButtonLink icon="lab la-github" href="">
-                        Github repo
-                    </ButtonLink>
+                    {project.project_link ? (
+                        <ButtonLink icon="las la-link" href={project.project_link}>
+                            {t('SEE_PROJECT_ONLINE')}
+                        </ButtonLink>
+                    ) : null}
+                    {project.github_link ? (
+                        <ButtonLink icon="lab la-github" href={project.github_link}>
+                            {t('GITHUB_REPO')}
+                        </ButtonLink>
+                    ) : null}
                 </section>
 
                 <div className="nav-buttons-container">

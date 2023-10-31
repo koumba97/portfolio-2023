@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react';
 import './ProjectCarousel.scss';
 import Button from '../ui/Button/Button';
+import { useTranslation } from 'react-i18next';
 
 interface ProjectCarouselInterface {
     images: string[];
-    demo?: string;
+    demo?: string | null;
 }
 const ProjectCarousel = ({ images = [], demo = null }: ProjectCarouselInterface) => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const [activeSlideImg, setActiveSlideImg] = useState(images[activeSlideIndex]);
     const [displayDemo, setDisplayDemo] = useState(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         setActiveSlideImg(images[activeSlideIndex]);
@@ -36,6 +38,11 @@ const ProjectCarousel = ({ images = [], demo = null }: ProjectCarouselInterface)
         <>
             <div className="project-carousel">
                 <div className="active-slide" style={{ backgroundImage: `url(${activeSlideImg})` }}>
+                    {demo ? (
+                        <Button className="demo-button" icon="las la-play" size="small" onClick={openDemo}>
+                            {t('WATCH_DEMO')}
+                        </Button>
+                    ) : null}
                     <div className="control-container">
                         <button className="slide-control-btn" onClick={() => updateActiveSlide(activeSlideIndex - 1)}>
                             <i className="las la-angle-left"></i>
@@ -44,11 +51,6 @@ const ProjectCarousel = ({ images = [], demo = null }: ProjectCarouselInterface)
                             <i className="las la-angle-right"></i>
                         </button>
                     </div>
-                    {demo ? (
-                        <Button className="demo-button" icon="las la-play" size="small" onClick={openDemo}>
-                            Voir la demo
-                        </Button>
-                    ) : null}
                 </div>
                 <div className="slides-container">
                     {images.map((image, index) => (
@@ -66,7 +68,7 @@ const ProjectCarousel = ({ images = [], demo = null }: ProjectCarouselInterface)
                 </div>
             </div>
 
-            {displayDemo ? (
+            {displayDemo && demo ? (
                 <div className="demo-container" onClick={closeDemo}>
                     <video controls>
                         <source src={demo} type="video/mp4" />
