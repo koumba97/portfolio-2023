@@ -9,6 +9,7 @@ interface NavButtonProp {
     route?: string;
     outlined?: boolean;
     className?: string;
+    onClick?: Function;
     id?: string;
     link?: string;
 }
@@ -19,6 +20,7 @@ const NavButton = ({
     className = '',
     id = '',
     link = '',
+    onClick,
 }: NavButtonProp) => {
     const { t } = useTranslation();
 
@@ -33,13 +35,16 @@ const NavButton = ({
                 break;
 
             default:
+                if (onClick) {
+                    onClick();
+                }
                 break;
         }
     };
 
     return (
         <>
-            {type !== 'link' ? (
+            {type !== 'link' && type !== 'about' ? (
                 <Link id={id} className={`nav-button ${className} ${outlined ? 'outlined' : null}`} to={route}>
                     <ButtonContent type={type} />
                 </Link>
