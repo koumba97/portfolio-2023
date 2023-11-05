@@ -127,7 +127,13 @@ export const ProjectsData: ProjectInterface[] = [
         stack: [StackList.react_js, StackList.typescript, StackList.sass, StackList.firebase],
         coverImage:
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/krush%2Fkrush-banner.png?alt=media&token=25a76fb6-c986-4825-953a-527def062a44&_gl=1*1f9j32x*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODUyMTM0MC40MC4xLjE2OTg1MjU1NDAuNTguMC4w',
-        images: [],
+        images: [
+            'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/krush%2Fkrush1.png?alt=media&token=3ab89d41-b01f-4abc-bd71-f298eba3874e&_gl=1*1wrmjnj*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5OTIwMzQzMC40Ni4xLjE2OTkyMDM0NzYuMTQuMC4w',
+            'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/krush%2Fkrush2.png?alt=media&token=b35daa08-efa8-40d0-b860-9d5f1eccc61f&_gl=1*hxknou*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5OTIwMzQzMC40Ni4xLjE2OTkyMDM3NjUuNDguMC4w',
+            'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/krush%2Fkrush3.png?alt=media&token=c0b085c0-f44e-4c62-9686-9d7f5523d425&_gl=1*15gvwdg*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5OTIwMzQzMC40Ni4xLjE2OTkyMDM3ODAuMzMuMC4w',
+            'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/krush%2Fkrush4.png?alt=media&token=0d051936-da96-4af5-869f-12c0fa215125&_gl=1*19gnfp4*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5OTIwMzQzMC40Ni4xLjE2OTkyMDM3OTIuMjEuMC4w',
+        ],
+        centeredImages: [1, 2, 3],
         demo: '',
         project_link: 'https://krush-koum.vercel.app/',
         github_link: 'https://github.com/koumba97/krush-ecommerce',
