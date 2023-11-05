@@ -78,5 +78,14 @@
         .project-details {
             height: auto;
         }
+
+        .nav-buttons-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% + 20px * 2);
+            left: -20px;
+            bottom: -20px;
+        }
     }
 }

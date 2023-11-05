@@ -15,4 +15,10 @@
         margin: 0;
         font-size: 30px;
     }
+
+    @media (min-width: 1px) and (max-width: $sm-breakpoint) {
+        #portfolio-2023 {
+            display: none;
+        }
+    }
 }

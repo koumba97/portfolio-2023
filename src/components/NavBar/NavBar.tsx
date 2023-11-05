@@ -6,7 +6,7 @@ const NavBar = () => {
     const { t } = useTranslation();
     return (
         <nav className="nav-bar">
-            <p>{t('PORTFOLIO_2023')}</p>
+            <p id="portfolio-2023">{t('PORTFOLIO_2023')}</p>
             <h3 className="brand-name">Koum.</h3>
             <SwitchLang />
         </nav>
