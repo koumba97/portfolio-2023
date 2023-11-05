@@ -16,6 +16,10 @@ const ProjectCarousel = ({ images = [], centeredImages = [], demo = null }: Proj
     const { t } = useTranslation();
 
     useEffect(() => {
+        setActiveSlideIndex(0);
+    }, [images]);
+
+    useEffect(() => {
         setActiveSlideImg(images[activeSlideIndex]);
         defineImagePostion();
     }, [activeSlideIndex, images]);

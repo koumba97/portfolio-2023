@@ -21,6 +21,7 @@ const Project = () => {
 
     useEffect(() => {
         if (projectId) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             const projectData = getProjectById(projectId);
             if (projectData) {
                 setProject(projectData);

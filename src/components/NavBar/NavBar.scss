@@ -5,7 +5,9 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-
+    a {
+        color: unset;
+    }
     p {
         margin: 0;
         color: $grey-200;
