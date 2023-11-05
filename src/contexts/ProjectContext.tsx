@@ -1,5 +1,6 @@
 import { createContext, useState } from 'react';
-import { ProjectInterface, ProjectsData } from '../data/ProjectsData';
+import { ProjectsData } from '../data/ProjectsData';
+import { ProjectInterface } from '../types/ProjectInterface';
 
 export const ProjectContext = createContext({
     projects: [] as ProjectInterface[],

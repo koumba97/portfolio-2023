@@ -9,6 +9,7 @@ export interface ProjectInterface {
     stack: Stack[];
     coverImage: string;
     images: string[];
+    centeredImages?: number[];
     demo?: string;
     project_link?: string;
     github_link?: string;

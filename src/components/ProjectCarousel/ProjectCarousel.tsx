@@ -5,16 +5,19 @@ import { useTranslation } from 'react-i18next';
 
 interface ProjectCarouselInterface {
     images: string[];
+    centeredImages?: number[];
     demo?: string | null;
 }
-const ProjectCarousel = ({ images = [], demo = null }: ProjectCarouselInterface) => {
+const ProjectCarousel = ({ images = [], centeredImages = [], demo = null }: ProjectCarouselInterface) => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+    const [imageCentered, setImageCentered] = useState(false);
     const [activeSlideImg, setActiveSlideImg] = useState(images[activeSlideIndex]);
     const [displayDemo, setDisplayDemo] = useState(false);
     const { t } = useTranslation();
 
     useEffect(() => {
         setActiveSlideImg(images[activeSlideIndex]);
+        defineImagePostion();
     }, [activeSlideIndex, images]);
 
     const updateActiveSlide = (slideIndex: number) => {
@@ -24,6 +27,12 @@ const ProjectCarousel = ({ images = [], demo = null }: ProjectCarouselInterface)
             slideIndex = 0;
         }
         setActiveSlideIndex(slideIndex);
+        defineImagePostion();
+    };
+
+    const defineImagePostion = () => {
+        const isCentered = centeredImages.find((image) => image === activeSlideIndex);
+        setImageCentered(isCentered !== undefined ? true : false);
     };
 
     const openDemo = () => {
@@ -37,7 +46,13 @@ const ProjectCarousel = ({ images = [], demo = null }: ProjectCarouselInterface)
     return (
         <>
             <div className="project-carousel">
-                <div className="active-slide" style={{ backgroundImage: `url(${activeSlideImg})` }}>
+                <div
+                    className="active-slide"
+                    style={{
+                        backgroundImage: `url(${activeSlideImg})`,
+                        backgroundPosition: `${imageCentered ? 'center' : 'unset'}`,
+                    }}
+                >
                     {demo ? (
                         <Button className="demo-button" icon="las la-play" size="small" onClick={openDemo}>
                             {t('WATCH_DEMO')}

@@ -5,7 +5,7 @@ import NavButton from '../../components/ui/NavButton/NavButton';
 import './Project.scss';
 import { useContext, useEffect, useState } from 'react';
 import { ProjectContext } from '../../contexts/ProjectContext';
-import { ProjectInterface } from '../../data/ProjectsData';
+import { ProjectInterface } from '../../types/ProjectInterface';
 import { useTranslation } from 'react-i18next';
 
 const Project = () => {
@@ -53,7 +53,11 @@ const Project = () => {
     return (
         <section className="project">
             <NavButton id="menu-button" />
-            <ProjectCarousel images={project.images} demo={project.demo ? project.demo : null} />
+            <ProjectCarousel
+                images={project.images}
+                centeredImages={project.centeredImages}
+                demo={project.demo ? project.demo : null}
+            />
             <div className="project-details">
                 <section>
                     <NavButton id="link-button" type="link" outlined link={window.location.href} />
@@ -66,7 +70,7 @@ const Project = () => {
                     <ul className="stack-list">
                         {project.stack
                             ? project.stack.map((stack) => (
-                                  <li>
+                                  <li key={`stack-${stack.name}`}>
                                       <div
                                           className="stack-logo"
                                           style={{ backgroundImage: `url(${stack.image})` }}

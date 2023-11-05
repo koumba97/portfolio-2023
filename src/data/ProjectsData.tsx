@@ -33,6 +33,7 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/biomimicry%2Fdev_affiche.jpg?alt=media&token=6d99723b-cc43-4678-8b81-af1f8e3d82b7&_gl=1*1snqtoe*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1ODk1NDguNi4wLjA.',
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/biomimicry%2Fdev_affiche2.jpg?alt=media&token=9bf7789d-2f00-4c44-9a0d-31c97eae62de&_gl=1*c0zcbc*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1ODk1NjQuNjAuMC4w',
         ],
+        centeredImages: [0, 1, 2, 3],
     },
     {
         id: '3',
@@ -47,6 +48,7 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/hii%2Fhii3.png?alt=media&token=78834500-2461-4729-b61a-bc4c355fdfeb&_gl=1*f00vm7*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1ODk2MzIuNTguMC4w',
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/hii%2Fhii4.png?alt=media&token=66b8c270-fb35-4311-adee-944989da1254&_gl=1*pxylff*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1ODk2NDkuNDEuMC4w',
         ],
+        centeredImages: [0, 2],
         demo: 'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/hii%2Fhii.mp4?alt=media&token=ec476576-9610-4682-b088-b04378146616&_gl=1*gkewru*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODY4OTU2MC40My4xLjE2OTg2ODk2MDQuMTYuMC4w',
     },
 
@@ -89,7 +91,12 @@ export const ProjectsData: ProjectInterface[] = [
         stack: [StackList.react_js, StackList.typescript, StackList.sass, StackList.firebase],
         coverImage:
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/music-library%2Fmusic-library-banner.png?alt=media&token=7fdf10b8-5f4d-4061-95bb-5b096d7e6e76&_gl=1*nzghm6*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODUyMTM0MC40MC4xLjE2OTg1MjM5MjYuNDYuMC4w',
-        images: [],
+        images: [
+            'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/music-library%2Fmusic-library-1.png?alt=media&token=e74eaa72-14f1-4cef-8b54-7b23a2ee1b9f&_gl=1*1pt558s*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5OTE5NjE2Ni40NS4xLjE2OTkxOTY1NTkuMjUuMC4w',
+            'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/music-library%2Fmusic-library-2.png?alt=media&token=66122c43-8272-45cb-b0a8-edc64067b425&_gl=1*cbdp5y*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5OTE5NjE2Ni40NS4xLjE2OTkxOTY3OTIuOS4wLjA.',
+            'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/music-library%2Fmusic-library-3.png?alt=media&token=94b30a2a-731c-4be5-a227-2149d6081e04&_gl=1*2kzbxg*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5OTE5NjE2Ni40NS4xLjE2OTkxOTYyMzMuNjAuMC4w',
+        ],
+        centeredImages: [1],
         demo: '',
         project_link: 'https://music-library-koum.vercel.app/',
         github_link: 'https://github.com/koumba97/music-library',
@@ -109,6 +116,7 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/typo%2Fhybridation2.jpg?alt=media&token=b3887dca-b925-444b-a283-f6375e240dd4&_gl=1*yc2lrr*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1OTA3NzMuMTAuMC4w',
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/typo%2Fhybridation3.jpg?alt=media&token=d35c15b7-634f-4d95-94fb-6069c82236b8&_gl=1*1m2fw3s*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1OTA3ODQuNjAuMC4w',
         ],
+        centeredImages: [0, 1, 2, 3],
     },
 
     {
@@ -139,6 +147,7 @@ export const ProjectsData: ProjectInterface[] = [
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/cinema%2Fmy_cinema3.jpg?alt=media&token=6571d4de-8b4b-4362-8458-10256b85a5e1&_gl=1*p1hnmn*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1OTA4NDUuNjAuMC4w',
             'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/cinema%2Fmy_cinema4.jpg?alt=media&token=03a74dd3-8a1d-4b25-ba1b-2a15dc82204e&_gl=1*1px85tt*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODU4OTE3Mi40MS4xLjE2OTg1OTA4NTcuNDguMC4w',
         ],
+        centeredImages: [0, 1, 2, 3],
         demo: 'https://firebasestorage.googleapis.com/v0/b/portfolio-2023-f93d8.appspot.com/o/cinema%2Fmy_cinema.mp4?alt=media&token=7c0193d9-fe23-4d2d-911f-164a973bd050&_gl=1*87ebw2*_ga*OTQ5OTY2Mjk4LjE2ODI5NzExMjM.*_ga_CW55HF8NVT*MTY5ODY4OTU2MC40My4wLjE2OTg2ODk1NjAuNjAuMC4w',
     },
 ];
