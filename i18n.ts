@@ -23,10 +23,12 @@ const resources = {
                 '<p>Domiciliation website built for the french company OSP. The webapp offers online subscriptions for domicialition contracts to any company, which thencan be generated as PDFs.</p>\n<p>The website also contains an admin dashboard to manage the clients, to scan & upload their mails, an user dashboard to check the mails and edit personal information and an online payment system.</p>',
             PROJECT_DESCRIPTION_COOKISH:
                 "<p>For this school project I built a mobile app that interacts with smartphone specific feature and uses public API.</p> \n<p>Cookish Master offers many recipes retrieved by Spoonacular's API. The user can then schedule the recipes on his smartphone calendar and generate a grocery list with the required ingredients to cook.</p>",
-            PROJECT_DESCRIPTION_MUSIC_LIBRARY: '',
+            PROJECT_DESCRIPTION_MUSIC_LIBRARY:
+                'The Music Library is a simple React web application using Spotify API that allows users to browse a limited collection of my favorite albums using a search bar.',
             PROJECT_DESCRIPTION_TYPO:
                 'Typographic experimentation created by merging the Carolingian handwriting with the Ocr A font',
-            PROJECT_DESCRIPTION_KRUSH: '',
+            PROJECT_DESCRIPTION_KRUSH:
+                '<p>KRUSH. is a fictional e-commerce website developed with React, where users can shop plants, furniture, and more by category</p> <p>This project is still in progress.</p>',
             PROJECT_DESCRIPTION_MY_CINEMA:
                 '<p>The aim of this project was to build a framework based on CakePHP structure. The architecture uses the same mechanisms as a MVC framework (Model/View/Controller).</p>\n<p>Once the "homemade" framework done, I created with this one a community website  on which the users can update a film bank and share their movies history</p>',
 
@@ -61,10 +63,12 @@ const resources = {
                 "<p>Site de domiciliation développé pour la société OSP. Celui-ci permet de souscrire à un contrat de domiciliation en ligne avec génération du contrat au format PDF.</p>\n<p>Le site dispose également d'un backoffice avec une gestion des clients et leur abonnement, d'un espace client pour consultation des factures et courrier et d'un module de paiement en ligne.</p>",
             PROJECT_DESCRIPTION_COOKISH:
                 "<p>Projet scolaire dont le but était de réaliser une application mobile interagissant avec une fonctionnalité du téléphone et utilisant une API.</p>\n\n<p>Mon application Cookish Master propose différentes recettes de cuisine récupérées à l'aide de l'API Spoonacular. Il est par la suite possible de programmer les recettes dans l'agenda de son téléphone et de générer une liste de course avec les ingrédients nécessaires.</p>",
-            PROJECT_DESCRIPTION_MUSIC_LIBRARY: '',
+            PROJECT_DESCRIPTION_MUSIC_LIBRARY:
+                "Music library est une application développée en React utilisant l'API Spotify, qui permet aux utilisateurs de parcourir une collection limitée de mes albums préférés via une barre de recherche.",
             PROJECT_DESCRIPTION_TYPO:
                 "Expérimentation typographique réalisée en fusionnant l'écriture Caroline à la police de caractère Ocr A",
-            PROJECT_DESCRIPTION_KRUSH: '',
+            PROJECT_DESCRIPTION_KRUSH:
+                '<p>KRUSH. est un site e-commerce fictif développé en React, où les utilisateurs peuvent faire leurs achats de plantes, de meubles, et plus encore par catégorie.</p> <p>Ce projet est toujours en cours.</p>',
             PROJECT_DESCRIPTION_MY_CINEMA:
                 '<p>Ce projet consistait à construire un framework basé sur la structure de CakePHP. L\'architecture imite les mécanismes nécessaires au fonctionnement d’un framework MVC (Model/View/Controller). </p> \n<p>Une fois le "homemade" framework fini, j\'ai réalisé à partir de celui-ci un site communautaire où les utilisateurs peuvent mettre à jour une banque de films et partager leur historique de films.</p>',
 
