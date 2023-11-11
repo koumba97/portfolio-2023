@@ -24,7 +24,7 @@ const AboutMe = ({ hide }: AboutMeProp) => {
                     <div className="about-me-picture"></div>
                     <div className="description">
                         <h1 dangerouslySetInnerHTML={{ __html: t('ABOUT_ME_INTRO') }} />
-                        <div dangerouslySetInnerHTML={{ __html: t('ABOUT_ME_CONTENT') }} />
+                        <div className="about-me-text" dangerouslySetInnerHTML={{ __html: t('ABOUT_ME_CONTENT') }} />
                         <div className="buttons-container">
                             <Button icon="" link="/">
                                 My resume

@@ -12,7 +12,7 @@ const resources = {
 
             ABOUT_ME_INTRO: "Hi, I'm Koumba !",
             ABOUT_ME_CONTENT:
-                "<p>I work as a web developer since 3 years.</p>\n\n<p>I'm passionate about the arts & draw, so I studied graphic design before switching to web development.</p>\n\n<p>Here I'm sharing some of my personal, school and professional projects.</p>\n\n<p>Enjoy !</p>",
+                "<p>I work as a web developer since 3 years.</p>\n\n<p>I'm passionate about the arts & draw, so I studied graphic design before switching to web development.</p>\n\n<p>Here I'm sharing some of my personal, school and professional projects.</p> <br/><p>Enjoy !</p>",
 
             PROJECT_DESCRIPTION_DRAWING:
                 'Some digital illustrations I created using an iPad and a drawing tablet.</p>\nProcess time 1h to 10h of work.',
@@ -53,7 +53,7 @@ const resources = {
 
             ABOUT_ME_INTRO: "Coucou, je m'appelle Koumba !",
             ABOUT_ME_CONTENT:
-                "<p>Je suis développeuse web depuis 3 ans.</p><p>Passionnée par le design et le dessin, j'ai d'abord étudié le design graphique avant de me réorienter vers le développement web.</p>\n\n<p>Ici, sont présentés quelques uns de mes travaux personnels, scolaires et professionnels.</p>\n\n<p>Bonne visite !</p>",
+                "<p>Je suis développeuse web depuis 3 ans.</p><p>Passionnée par le design et le dessin, j'ai d'abord étudié le design graphique avant de me réorienter vers le développement web.</p>\n\n<p>Ici, sont présentés quelques uns de mes travaux personnels, scolaires et professionnels.</p> <br/><p>Bonne visite !</p>",
 
             PROJECT_DESCRIPTION_DRAWING:
                 "<p>Série d'illustrations digitales réalisée sur iPad et tablette graphique.</p>\n<p>Durée de réalisation allant de 1 à 10h de travail.</p>",
