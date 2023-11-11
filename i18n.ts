@@ -44,6 +44,8 @@ const resources = {
 
             SEE_PROJECT_ONLINE: 'See the project online',
             GITHUB_REPO: 'Github repository',
+
+            MY_RESUME: 'My resume',
         },
     },
     fr: {
@@ -85,6 +87,8 @@ const resources = {
 
             SEE_PROJECT_ONLINE: 'Voir le projet en ligne',
             GITHUB_REPO: 'Github repository',
+
+            MY_RESUME: 'Mon CV',
         },
     },
 };
