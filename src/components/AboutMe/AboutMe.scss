@@ -86,6 +86,11 @@
                 }
             }
         }
+
+        @media (min-width: 1px) and (max-width: $xs-breakpoint) {
+            margin-left: calc(-50% + 30px);
+            width: calc(100% - 30px * 2);
+        }
     }
 }
 
