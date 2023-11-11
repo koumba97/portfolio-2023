@@ -25,10 +25,6 @@ const Button = ({
     outlined = false,
     link = undefined,
 }: IProp) => {
-    const handleClick = () => {
-        if (onClick && !disabled) onClick();
-    };
-
     return (
         <>
             {link ? (
