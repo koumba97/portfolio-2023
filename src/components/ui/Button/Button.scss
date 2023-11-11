@@ -51,8 +51,22 @@
         background-color: $brand-color;
         color: white;
 
-        &:hover {
-            background-color: mix(black, $brand-color, 10%);
+        &.outlined {
+            background-color: transparent;
+            border: $brand-color solid 2px;
+            color: $brand-color;
+
+            &:hover {
+                color: mix(black, $brand-color, 10%);
+                border-color: mix(black, $brand-color, 10%);
+                background-color: mix(white, $brand-color, 80%);
+            }
+        }
+
+        &:not(.outlined) {
+            &:hover {
+                background-color: mix(black, $brand-color, 10%);
+            }
         }
     }
 
@@ -60,8 +74,22 @@
         background-color: $grey-800;
         color: white;
 
-        &:hover {
-            background-color: mix(black, $grey-800, 100%);
+        &.outlined {
+            background-color: transparent;
+            border: $grey-800 solid 2px;
+            color: $grey-800;
+
+            &:hover {
+                color: mix(black, $grey-800, 100%);
+                border-color: mix(black, $grey-800, 100%);
+                background-color: mix(white, $grey-800, 80%);
+            }
+        }
+
+        &:not(.outlined) {
+            &:hover {
+                background-color: mix(black, $grey-800, 100%);
+            }
         }
     }
 

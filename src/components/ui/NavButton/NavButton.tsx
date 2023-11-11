@@ -3,7 +3,7 @@ import './NavButton.scss';
 import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
 
-type ButtonType = 'menu' | 'next' | 'previous' | 'link' | 'about';
+type ButtonType = 'menu' | 'next' | 'previous' | 'link' | 'about' | 'close';
 interface NavButtonProp {
     type?: ButtonType;
     route?: string;
@@ -44,7 +44,7 @@ const NavButton = ({
 
     return (
         <>
-            {type !== 'link' && type !== 'about' ? (
+            {type !== 'link' && type !== 'about' && type !== 'close' ? (
                 <Link id={id} className={`nav-button ${className} ${outlined ? 'outlined' : null}`} to={route}>
                     <ButtonContent type={type} />
                 </Link>
@@ -81,6 +81,9 @@ const ButtonContent = ({ type }: ButtonContentProp) => {
         case 'about':
             return <AboutButton />;
 
+        case 'close':
+            return <CloseButton />;
+
         default:
             return <MenuButton />;
     }
@@ -111,6 +114,10 @@ const LinkButton = () => {
 
 const AboutButton = () => {
     return <i className="las la-user"></i>;
+};
+
+const CloseButton = () => {
+    return <i className="las la-times"></i>;
 };
 
 export default NavButton;
