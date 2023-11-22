@@ -46,6 +46,7 @@ const resources = {
             GITHUB_REPO: 'Github repository',
 
             MY_RESUME: 'My resume',
+            RESUME_LINK: '/koumba-keita-resume.pdf',
         },
     },
     fr: {
@@ -89,6 +90,7 @@ const resources = {
             GITHUB_REPO: 'Github repository',
 
             MY_RESUME: 'Mon CV',
+            RESUME_LINK: '/koumba-keita-resume-fr.pdf',
         },
     },
 };

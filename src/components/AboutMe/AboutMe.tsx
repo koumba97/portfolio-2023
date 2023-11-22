@@ -26,7 +26,7 @@ const AboutMe = ({ hide }: AboutMeProp) => {
                         <h1 dangerouslySetInnerHTML={{ __html: t('ABOUT_ME_INTRO') }} />
                         <div className="about-me-text" dangerouslySetInnerHTML={{ __html: t('ABOUT_ME_CONTENT') }} />
                         <div className="buttons-container">
-                            <Button icon="" link="/koumba-keita-resume.pdf">
+                            <Button icon="" link={t('RESUME_LINK')}>
                                 {t('MY_RESUME')}
                             </Button>
                             <Button
